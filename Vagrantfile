@@ -14,6 +14,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "OlefirenkoK/Kv-011"
   #config.vm.network :forwarded_port, guest: 5432, host: 5432
+  config.vm.network :forwarded_port, guest: 8000, host: 8001
   config.ssh.private_key_path = './vagrant_private_key'
   config.ssh.insert_key = false
   config.vm.provision "shell", path: "provision.sh" 

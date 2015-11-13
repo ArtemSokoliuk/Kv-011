@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'SSP.ssp_project.urls'
+ROOT_URLCONF = 'ssp_project.urls'
 
 TEMPLATES = [
     {
