@@ -5,6 +5,40 @@ __pycache__/
 # C extensions
 *.so
 
+# Compiled
+*.pyc
+._*
+
+#local_settings
+/SSP/ssp_project/settings_mironnn.py
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# MySQL confs
+
+
+# pycharm settings
+.idea/
+*.iml
+
+# server static(add here)
+static_server/
+
+# media(add here)
+SSP/media/
+
 # Distribution / packaging
 .Python
 env/
@@ -55,3 +89,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Vagrant
+*.vagrant*
+.Vagrantfile.*
