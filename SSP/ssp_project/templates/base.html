@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>
+    	SoftServe Office Plan Helper - {% block title %}{% endblock %}
+    </title>
+    <!-- CSS Inclusion -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/vendor/bootstrap.min.css'%}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/base.css'%}" rel="stylesheet" type="text/css" />
+    {% block stylecss %}{% endblock %}
+    <!-- Javascripts Inclusion -->
+    <script src="{% static 'js/vendor/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/base.js'%}"></script>
+    {% block extra_js %}{% endblock extra_js %}
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Start Header -->
+        <div class="row" id="header">
+          <div class="col-xs-12">
+            <h1>SoftServe Floor Plan</h1>
+          </div>
+        </div>
+
+        {% block header %}
+            {% endblock %}
+
+        {% block content %}
+                {% block login %}
+                {% endblock %}
+        {% endblock %}
+
+        {% block footer %}
+        {% endblock %}
+
+        {% block pop_messages %}
+            {% if messages %}
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            {% endif %}
+        {% endblock %}
+
+        <!-- Start Footer -->
+
+        <div class="navbar-fixed-bottom row-fluid">
+            <div class="navbar-inner">
+                <div class="container">
+                    <p class="text-muted">&copy; 2015 SoftServe Floor Plan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Footer -->
+    </div>
+    <!-- End Container -->
+
+</body>
+</html>
