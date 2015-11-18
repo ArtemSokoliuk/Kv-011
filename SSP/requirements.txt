@@ -2,3 +2,5 @@ Django==1.8.6
 Jinja2==2.8
 MarkupSafe==0.23
 psycopg2==2.6.1
+django-pgfields==1.4.4
+Pillow==2.9.0
