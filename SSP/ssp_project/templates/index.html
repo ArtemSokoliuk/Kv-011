@@ -20,7 +20,15 @@
 
     <p>
         ITA SoftServe
-    </p>
+    </p
+    
+    {% if request.user.is_staff %}
+        Welcome {{ user.username }}! <br>
+        When db is available you'll see here an employee list pending for seating
+    {% else %}
+        Sorry {{ user.username }}, you're not a staff member!
+
+    {% endif %}
 
 
 {% endblock content %}
