@@ -4,7 +4,7 @@
 3. vagrant ssh
 
 #REQUIREMENTS:
-* Postgres 9.3.10
+* Postgres 9.4.5
 * bootstrap-3.3.5
 * leaflet-0.7.7
 * leaflet.draw-0.2.3
