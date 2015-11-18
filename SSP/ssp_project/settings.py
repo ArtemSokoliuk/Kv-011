@@ -38,6 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'plan_editor',
+    'django_behave',
+    'carcassone',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,7 +53,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
+TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'
+
 ROOT_URLCONF = 'ssp_project.urls'
+
+LOGIN_REDIRECT_URL = '/'
 
 TEMPLATES = [
     {

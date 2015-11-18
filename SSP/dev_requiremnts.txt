@@ -1,0 +1,2 @@
+splinter==0.7.3
+django_behave==0.1.5
