@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'plan_editor',
-    'django_pg',
     'django_behave',
     'carcassone',
 )
